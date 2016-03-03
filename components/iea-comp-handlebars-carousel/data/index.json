@@ -1,0 +1,126 @@
+{
+	"data": {
+		"path": "/content/iea/en_us/home/carousaltest/_jcr_content/flexi_hero_par/carousel",
+		"componentType": "carousel",
+		"clientSideRendering": true,
+		"viewType": "defaultView",
+		"randomNumber": "0",
+		"isContainer": true,
+		"carousel": {
+			"slides": [{
+				"panel": {
+					"componentType": "image",
+					"image": {
+						"fileName": "carousel-3",
+						"extension": "jpg",
+						"isNotAdaptiveImage": "false",
+						"isCroppingRequired": "false",
+						"title": "",
+						"windowType": "",
+						"altImage": "",
+						"imageURL": "http://lorempixel.com/800/450/food/1/",
+						"linkURL": "false",
+						"randomNumber": "831",
+						"fileReference": "/content/iea/en_us/panel-1/jcr:content/flexi_hero_par/panel",
+						"componentParentType": "panel"
+					},
+					"videoType": "youtube",
+					"viewType": "imagePanel",
+					"isContainer": false,
+					"properties": {
+						"alignmentOfLinks": "bottom-left",
+						"primaryBrowserSelection": "no",
+						"randomNumber": "831",
+						"secondaryBrowserSelection": "no"
+					},
+					"resourceType": "/apps/iea/components/image"
+				},
+				"componentParentType": "carousel",
+				"resourceType": "/apps/iea/components/panel"
+			}, {
+				"panel": {
+					"componentType": "video",
+					"videoType": "brightcove",
+					"viewType": "videoPanel",
+					"isContainer": false,
+					"video": {
+						"alt": "",
+						"isNotAdaptive": false,
+						"videoId": "2874968075001",
+						"showRelated": false,
+						"displayOption": "Embedded",
+						"videoTitle": "",
+						"autoplay": false,
+						"allowFullScreen": false,
+						"imageURL": "http://lorempixel.com/800/450/food/1/",
+						"randomNumber": "275",
+						"viewType": "brightcove",
+						"videoFormats": "",
+						"referencePath": "",
+						"videoSubHeadline": "",
+						"audio": "",
+						"externalPlayerUrl": "",
+						"componentParentType": "panel",
+						"showControls": "",
+						"thumbnailUrl": "",
+						"loopPlayback": ""
+					},
+					"properties": {
+						"alignmentOfLinks": "bottom-left",
+						"primaryBrowserSelection": "no",
+						"randomNumber": "275",
+						"secondaryBrowserSelection": "no"
+					},
+					"resourceType": "/apps/iea/components/video"
+				},
+				"componentParentType": "carousel",
+				"resourceType": "/apps/iea/components/panel"
+			}, {
+				"panel": {
+					"componentType": "image",
+					"image": {
+						"fileName": "carousel-2",
+						"extension": "jpg",
+						"isNotAdaptiveImage": "false",
+						"isCroppingRequired": "false",
+						"title": "",
+						"windowType": "",
+						"altImage": "",
+						"imageURL": "http://lorempixel.com/800/450/food/1/",
+						"linkURL": "false",
+						"randomNumber": "235",
+						"fileReference": "/content/iea/en_us/panel/jcr:content/flexi_hero_par/panel_1b6b",
+						"componentParentType": "panel"
+					},
+					"videoType": "youtube",
+					"viewType": "imagePanel",
+					"isContainer": false,
+					"properties": {
+						"subHeadLine": "President Obama is traveling through Alaska to shine a spotlight on the impacts of climate change, one of the biggest threats we face.",
+						"alignmentOfLinks": "bottom-left",
+						"displayUrl": "FOLLOW ALONG",
+						"actionUrl": "https://www.whitehouse.gov/2015-alaska-trip",
+						"primaryBrowserSelection": "no",
+						"randomNumber": "235",
+						"secondaryBrowserSelection": "no",
+						"headline": "President Obama’s Trip to Alaska"
+					},
+					"resourceType": "/apps/iea/components/image"
+				},
+				"componentParentType": "carousel",
+				"resourceType": "/apps/iea/components/panel"
+			}],
+			"componentNameForService": "carousel",
+			"clientSideRendering": true,
+			"componentGroup": "IEA",
+			"randomNumber": "0",
+			"intervalsOfRotation": "3",
+			"clientSideComponentName": "iea-component-carousel",
+			"jsonNameSpace": "carousel",
+			"componentName": "carousel",
+			"slideType": ["/content/iea/en_us/panel-1/jcr:content/flexi_hero_par/panel", "/content/iea/en_us/panel2/jcr:content/flexi_hero_par/panel", "/content/iea/en_us/panel/jcr:content/flexi_hero_par/panel_1b6b"],
+			"numlinks": "3"
+		},
+		"resourceType": "iea/components/carousel"
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "name": "iea-comp-handlebars-carousel",
+    "version": "1.0.5",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bxslider": "git+https://github.com/stevenwanderski/bxslider-4.git"
+    },
+	  "publishConfig": {
+		"registry": "http://10.209.11.185:8089/nexus/content/repositories/npm-dev-internal/"
+	  }
+}

@@ -1,0 +1,11 @@
+<ul class="iea-carousel clearfix" aria-label="carousel">
+	{{#each data.carousel.slides}}
+		<li class="{{#if this.panel.image}} image {{else}} video {{/if}}">
+			{{#if this.panel.image}}
+				{{> ./carousel-partial-2.hbs }}				
+			{{else}}
+				{{> ./carousel-partial.hbs }}
+			{{/if}}
+		</li>
+	{{/each}}
+</ul>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Events Page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+        <link rel="stylesheet" type="text/css" href="../${data.compName}/style/style.scss">
+    </head>
+<body>
+<div id='content'>
+    <h3 if="data.isServer === 'true'">Server Side</h3>
+    <h3 else>Client Side</h3>
+    <ssi data-component-url="components/${data.compName}"
+         data-component-name="${data.compName}"
+         data-content-model="/_content/${data.compName}"
+         data-render-path="${data.isServer ? data.compName + '_server' : data.compName + '_client'}"
+         isServer="${data.isServer}">
+    </ssi>
+</div>
+</body>
+</html>

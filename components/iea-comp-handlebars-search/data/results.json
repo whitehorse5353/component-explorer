@@ -1,0 +1,360 @@
+{
+	"searchDetail": {
+		"facets": [{
+			"type": "price",
+			"identifier": "$50-$99.99",
+			"displayValue": "$50-$99.99",
+			"count": 30
+		}, {
+			"type": "price",
+			"identifier": "$100-$199.99",
+			"displayValue": "$100-$199.99",
+			"count": 12
+		}, {
+			"type": "price",
+			"identifier": "$200-$299.99",
+			"displayValue": "$200-$299.99",
+			"count": 27
+		}, {
+			"type": "brand",
+			"identifier": "Esabella",
+			"displayValue": "Esabella",
+			"count": 24
+		}, {
+			"type": "brand",
+			"identifier": "Mammut",
+			"displayValue": "Mammut",
+			"count": 18
+		}, {
+			"type": "brand",
+			"identifier": "Mammuta",
+			"displayValue": "Mammuta",
+			"count": 15
+		}, {
+			"type": "brand",
+			"identifier": "Montura",
+			"displayValue": "Montura",
+			"count": 3
+		}, {
+			"type": "brand",
+			"identifier": "Patogonia",
+			"displayValue": "Patogonia",
+			"count": 9
+		}, {
+			"type": "swatchColors",
+			"identifier": "BLACK",
+			"displayValue": "Black",
+			"count": 3
+		}, {
+			"type": "swatchColors",
+			"identifier": "BLUE",
+			"displayValue": "Blue",
+			"count": 18
+		}, {
+			"type": "swatchColors",
+			"identifier": "BROWN",
+			"displayValue": "Brown",
+			"count": 3
+		}, {
+			"type": "swatchColors",
+			"identifier": "GREEN",
+			"displayValue": "Green",
+			"count": 9
+		}, {
+			"type": "swatchColors",
+			"identifier": "GREY",
+			"displayValue": "Grey",
+			"count": 3
+		}, {
+			"type": "swatchColors",
+			"identifier": "ORANGE",
+			"displayValue": "Orange",
+			"count": 3
+		}, {
+			"type": "swatchColors",
+			"identifier": "PINK",
+			"displayValue": "Pink",
+			"count": 3
+		}, {
+			"type": "swatchColors",
+			"identifier": "RED",
+			"displayValue": "Red",
+			"count": 9
+		}, {
+			"type": "swatchColors",
+			"identifier": "YELLOW",
+			"displayValue": "Yellow",
+			"count": 3
+		}, {
+			"type": "size",
+			"identifier": "S",
+			"displayValue": "S",
+			"count": 23
+		}, {
+			"type": "size",
+			"identifier": "M",
+			"displayValue": "M",
+			"count": 23
+		}, {
+			"type": "size",
+			"identifier": "L",
+			"displayValue": "L",
+			"count": 23
+		}],
+		"keywords": "jackets",
+		"description": "Search results for jackets",
+		"products": [{
+			"id": "prd9039_GREEN_S",
+			"title": "Green Women Full-Zipped Hoodie S",
+			"shortDescription": "High quality, pleasantly soft microfleece pull Zippered collar with hood. Small packing volume, low weight.&lt;p&gt;Features -&lt;/p&gt; &lt;p&gt;Helmet-compatible hood&lt;/p&gt;&lt;p&gt;Covered zipper on the collar for when the hood is zipped off&lt;/p&gt;&lt;p&gt;2 inner pocket&lt;/p&gt;&lt;p&gt;Optimally suitable for Backpacking, Alpine Skiing, Walking&lt;/p&gt;",
+			"longDescription": "High quality, pleasantly soft microfleece pull Zippered collar with hood.",
+			"manufacturer": "Esabella",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9039_GREEN_S/images/",
+				"title": "Green Women Full-Zipped Hoodie S",
+				"thumbnail": "/rest/v2/summitstore/products/prd9039_GREEN_S/images/"
+			}],
+			"prices": [{
+				"value": 70,
+				"currency": "USD",
+				"formattedValue": "$70.00"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_GREEN_L",
+			"title": "Military Green Four Front Pockets Jacket L",
+			"shortDescription": "Military Green Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Green Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_GREEN_L/images/",
+				"title": "Military Green Four Front Pockets Jacket L",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_GREEN_L/images/"
+			}],
+			"prices": [{
+				"value": 79.95,
+				"currency": "USD",
+				"formattedValue": "$79.95"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_GREEN_M",
+			"title": "Military Green Four Front Pockets Jacket M",
+			"shortDescription": "Military Green Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Green Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_GREEN_M/images/",
+				"title": "Military Green Four Front Pockets Jacket M",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_GREEN_M/images/"
+			}],
+			"prices": [{
+				"value": 79.95,
+				"currency": "USD",
+				"formattedValue": "$79.95"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_GREEN_S",
+			"title": "Military Green Four Front Pockets Jacket S",
+			"shortDescription": "Military Green Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Green Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_GREEN_S/images/",
+				"title": "Military Green Four Front Pockets Jacket S",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_GREEN_S/images/"
+			}],
+			"prices": [{
+				"value": 79.95,
+				"currency": "USD",
+				"formattedValue": "$79.95"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_GREY_L",
+			"title": "Military Grey Four Front Pockets Jacket L",
+			"shortDescription": "Military Grey Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Grey Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_GREY_L/images/",
+				"title": "Military Grey Four Front Pockets Jacket L",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_GREY_L/images/"
+			}],
+			"prices": [{
+				"value": 75.99,
+				"currency": "USD",
+				"formattedValue": "$75.99"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_GREY_M",
+			"title": "Military Grey Four Front Pockets Jacket M",
+			"shortDescription": "Military Grey Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Grey Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_GREY_M/images/",
+				"title": "Military Grey Four Front Pockets Jacket M",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_GREY_M/images/"
+			}],
+			"prices": [{
+				"value": 75.99,
+				"currency": "USD",
+				"formattedValue": "$75.99"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_GREY_S",
+			"title": "Military Grey Four Front Pockets Jacket S",
+			"shortDescription": "Military Grey Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Grey Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_GREY_S/images/",
+				"title": "Military Grey Four Front Pockets Jacket S",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_GREY_S/images/"
+			}],
+			"prices": [{
+				"value": 75.99,
+				"currency": "USD",
+				"formattedValue": "$75.99"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_BLUE_L",
+			"title": "Military Light Blue Four Front Pockets Jacket L",
+			"shortDescription": "Military Light Blue Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Light Blue Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_BLUE_L/images/",
+				"title": "Military Light Blue Four Front Pockets Jacket L",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_BLUE_L/images/"
+			}],
+			"prices": [{
+				"value": 78.75,
+				"currency": "USD",
+				"formattedValue": "$78.75"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_BLUE_M",
+			"title": "Military Light Blue Four Front Pockets Jacket M",
+			"shortDescription": "Military Light Blue Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Light Blue Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_BLUE_M/images/",
+				"title": "Military Light Blue Four Front Pockets Jacket M",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_BLUE_M/images/"
+			}],
+			"prices": [{
+				"value": 78.75,
+				"currency": "USD",
+				"formattedValue": "$78.75"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}, {
+			"id": "prd9032_BLUE_S",
+			"title": "Military Light Blue Four Front Pockets Jacket S",
+			"shortDescription": "Military Light Blue Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs, zip pockets at front waist. Crafted from 100% cotton with a classic button down fastening, finished with contrast detailing Urban looks are right on trend this season and this casual jacket channels it perfectly. Fitting right in to any off-duty wardrobe, this features buttoned patch pockets and zip fastening. A smart cover up can be difficult to find, but this jacket ticks all the boxes! With button up fastening, shoulder patch detail  it&#x27;s a slick style that will work season after season.",
+			"longDescription": "Military Light Blue Four Front Pockets jacket with quilt stitched detailing, mock collar, brand print at back of neck, full zipped front, long sleeves with elasticated cuffs.",
+			"manufacturer": "Patogonia",
+			"numberOfChildSKUs": 0,
+			"media": [{
+				"type": "image",
+				"link": "/rest/v2/summitstore/products/prd9032_BLUE_S/images/",
+				"title": "Military Light Blue Four Front Pockets Jacket S",
+				"thumbnail": "/rest/v2/summitstore/products/prd9032_BLUE_S/images/"
+			}],
+			"prices": [{
+				"value": 78.75,
+				"currency": "USD",
+				"formattedValue": "$78.75"
+			}],
+			"inventory": {
+				"availableQty": ""
+			}
+		}],
+		"count": 69,
+		"content": {
+			"path": "/content/summitstore/en_us/searchResult/_jcr_content/flexi_hero_par/columncontrol_ea9a/container_par_1/columncontrol_a596/container_par_2/productlisting_557c",
+			"componentType": "productListing",
+			"clientSideRendering": false,
+			"viewType": "defaultView",
+			"randomNumber": "148",
+			"isContainer": false,
+			"productListing": {
+				"clientSideRendering": false,
+				"columns": 3,
+				"itemsPerPage": 10,
+				"noResultsText": "No result found",
+				"componentGroup": "IEA-Ecommerce",
+				"randomNumber": "148",
+				"viewType": "defaultView",
+				"clientSideComponentName": "product-listing",
+				"attributes": [{
+					"type": "sort",
+					"default": "name-asc",
+					"values": [{
+						"key": "name-asc",
+						"value": "Ascending"
+					}, {
+						"key": "name-desc",
+						"value": "Descending"
+					}, {
+						"key": "price-asc",
+						"value": "Price: High to Low"
+					}, {
+						"key": "price-desc",
+						"value": "Price: Low to High"
+					}]
+				}, {
+					"type": "pageView",
+					"default": "grid"
+				}],
+				"componentName": "productListing",
+				"jsonNameSpace": "productListing"
+			},
+			"resourceType": "iea/components/integration/commerce/components/productListing"
+		}
+	}
+}

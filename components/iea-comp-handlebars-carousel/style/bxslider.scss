@@ -1,0 +1,188 @@
+//colors
+$color_celeste_approx: #ccc;
+$white: #fff;
+$color_storm_dust_approx: #666;
+$black: #000;
+$color_fuscous_gray_75_approx: rgba(80, 80, 80, 0.75);
+//
+//
+//
+//
+//fonts
+$font_0: Arial;
+//
+//
+//
+//
+//urls
+$url_0: url(../asset/images/bx_loader.gif);
+$url_1: url(../asset/images/controls.png);
+//
+//
+//
+//
+//
+//@extend-elements
+//original selectors
+//.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto
+%extend_1 {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+//original selectors
+//.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item
+%extend_2 {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    *zoom: 1;
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    .bx-viewport {
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 5px $color_celeste_approx;
+        border: 5px solid $white;
+        left: -5px;
+        background: $white;
+        //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: translatez(0);
+    }
+    .bx-pager {
+        @extend %extend_1;
+        text-align: center;
+        font-size: .85em;
+        font-family: $font_0;
+        font-weight: bold;
+        color: $color_storm_dust_approx;
+        padding-top: 20px;
+        .bx-pager-item {
+            @extend %extend_2;
+        }
+        &.bx-default-pager a {
+            background: $color_storm_dust_approx;
+            text-indent: -9999px;
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            outline: 0;
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 5px;
+            &:hover {
+                background: $black;
+            }
+            &.active {
+                background: $black;
+            }
+        }
+    }
+    .bx-controls-auto {
+        @extend %extend_1;
+        text-align: center;
+        .bx-controls-auto-item {
+            @extend %extend_2;
+        }
+        .bx-start {
+            display: block;
+            text-indent: -9999px;
+            width: 10px;
+            height: 11px;
+            outline: 0;
+            background: $url_1 -86px -11px no-repeat;
+            margin: 0 3px;
+            &:hover {
+                background-position: -86px 0;
+            }
+            &.active {
+                background-position: -86px 0;
+            }
+        }
+        .bx-stop {
+            display: block;
+            text-indent: -9999px;
+            width: 9px;
+            height: 11px;
+            outline: 0;
+            background: $url_1 -86px -44px no-repeat;
+            margin: 0 3px;
+            &:hover {
+                background-position: -86px -33px;
+            }
+            &.active {
+                background-position: -86px -33px;
+            }
+        }
+    }
+    .bx-loading {
+        min-height: 50px;
+        background: $url_0 center center no-repeat $white;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+    }
+    .bx-prev {
+        left: 10px;
+        background: $url_1 no-repeat 0 -32px;
+        &:hover {
+            background-position: 0 0;
+        }
+    }
+    .bx-next {
+        right: 10px;
+        background: $url_1 no-repeat -43px -32px;
+        &:hover {
+            background-position: -43px 0;
+        }
+    }
+    .bx-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $color_storm_dust_approx;
+        background: $color_fuscous_gray_75_approx;
+        width: 100%;
+        span {
+            color: $white;
+            font-family: $font_0;
+            display: block;
+            font-size: .85em;
+            padding: 10px;
+        }
+    }
+    .bx-controls-direction a {
+        position: absolute;
+        top: 50%;
+        margin-top: -16px;
+        outline: 0;
+        width: 32px;
+        height: 32px;
+        text-indent: -9999px;
+        z-index: 9999;
+        &.disabled {
+            display: none;
+        }
+    }
+    .bx-controls.bx-has-controls-auto.bx-has-pager {
+        .bx-pager {
+            text-align: left;
+            width: 80%;
+        }
+        .bx-controls-auto {
+            right: 0;
+            width: 35px;
+        }
+    }
+}

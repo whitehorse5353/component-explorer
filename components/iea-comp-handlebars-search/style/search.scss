@@ -1,0 +1,42 @@
+.myresults{
+  margin : 0 auto;
+  margin-bottom: 100px;
+  width: ieagrid(10,$cols);
+  color: #AAA;
+  .showmore{
+    float:right;
+    padding : 10px;
+    margin: 20px 0;
+    background-color: #2196F3;
+    outline : none;
+    border:none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+  }
+}
+.results{
+  margin : 0 auto;
+  min-height: 800px;
+  & > div{
+    float: left;
+    padding : 0 20px;
+    height : 200px;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    width: ieagrid(4,$cols);
+    @include breakpoint(tablet){
+      width: ieagrid(6,$cols);
+    }
+    @include breakpoint(mobile){
+      width :ieagrid(12, $cols);
+    }
+  }
+  h2 a{
+    text-decoration: none;
+  }
+}
+.myresults div > h2 a{
+  @include breakpoint(mobile){
+    color: red;
+  }
+}
