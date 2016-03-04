@@ -5,15 +5,18 @@
         <meta charset="utf-8">
         <title>component explorer</title>
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     </head>
 <body>
-<div id='content'>
+<div id='content' class="container">
     <h3>Welcome to IEA component explorer</h3>
-    <ul>
-        <li for="dir in data.dirs">
-            ${dir} - <a href="_components/${dir}?server=true">server</a> | <a href="_components/${dir}">client</a>
-        </li>
-    </ul>
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" for="dir in data.dirs">
+                ${dir}  <span class="badge"><a href="_components/${dir}?server=true" style="text-decoration:none;color:#FFF;">server</a></span>  <span class="badge"><a href="_components/${dir}" style="text-decoration:none;color:#FFF;">client</a></span>
+            </li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
