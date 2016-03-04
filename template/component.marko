@@ -19,63 +19,55 @@
          isServer="${data.isServer}">
     </ssi>
 
-    <div class="row col-md-12">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">README.md</div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
-        </div>
+    <div class="row col-md-12" style="height:900px">
 
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">Test Suits</div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
-        </div>
 
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#readme">README.md</a></li>
+      <li><a data-toggle="tab" href="#package">Package.json</a></li>
+      <li><a data-toggle="tab" href="#mockdata">Mock Data</a></li>
+      <li><a data-toggle="tab" href="#testsuite">Tests</a></li>
+    </ul>
+
+    <div class="tab-content" style="height:100%">
+      <div id="readme" class="tab-pane fade in active">
+        <p>Some content.</p>
+      </div>
+      <div id="package" class="tab-pane fade" style="height:50%">
+        <div class="panel-body"
+             id="packageEditor"
+             style="height:100%">
+        </div>
+      </div>
+      <div id="mockdata" class="tab-pane fade" style="height:50%">
+        <div class="panel-body"
+             id="editor"
+             style="height:100%">
+        </div>
+      </div>
+      <div id="testsuite" class="tab-pane fade" style="height:50%">
+              <div class="panel-body">
+                virtual test runner
+              </div>
+            </div>
     </div>
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">Mock Data</div>
-            <div class="panel-body"
-                 id="editor"
-                 style="height:500px">
-
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">Package Json</div>
-            <div class="panel-body"
-                 id="package"
-                 style="height:500px">
-
-            </div>
-        </div>
     </div>
 </div>
 
+<script src="http://code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"rs></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"rs></script>
 <script src="https://ace.c9.io/build/src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
     var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
+    var package = ace.edit("packageEditor");
+    package.setTheme("ace/theme/twilight");
+    editor.setTheme("ace/theme/twilight");
     editor.getSession().setMode("ace/mode/javascript");
+    package.getSession().setMode("ace/mode/javascript");
     editor.getSession().setUseWrapMode(true);
     editor.setValue(JSON.stringify(${data.mock}, null, '\t'));
-
-     var package = ace.edit("package");
-    package.setTheme("ace/theme/twilight");
-    package.getSession().setMode("ace/mode/javascript");
-    package.getSession().setUseWrapMode(true);
     package.setValue(JSON.stringify(${data.pack}, null, '\t'));
     package.setReadOnly(true);
-    package.setReadOnly(true); 
 </script>
 
 </body>
