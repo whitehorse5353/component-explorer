@@ -53,6 +53,13 @@ var dataSlug = req.params.slug;
   res.send('Saved Successfully');
 });
 
+app.post('/saveData/:slug',function(req,res){
+    var compName = req.params.slug;    
+    console.log(req.body);
+    res.send('saved sucessfully');
+})
+
+
 var port = process.env.port || 3000;
 var server = app.listen(port, function () {
     var host = server.address().address;

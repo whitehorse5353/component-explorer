@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     </head>
 <body>
+  <require module="superagent" var="superagent"></require>
 <div class="container" id='content'>
     <h3 if="data.isServer === 'true'">Server Side</h3>
     <h3 else>Client Side</h3>
@@ -30,12 +31,18 @@
     </ul>
 
     <div class="tab-content" style="height:50%">
-      <div id="readme" class="tab-pane fade in active" style="height:50%">
-        <div class="panel-body"
-             id="readMeDoc"
-             style="height:100%">
-             ${data.readMe}
-      </div>
+      
+        <div id="readme" class="tab-pane fade in active" style="height:50%">
+          <div type='text' class="panel-body"
+               id="readMeDoc"
+               style="height:100%"
+               name='readMeDoc'>
+               ${data.readMe}
+        </div>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email"></input>
+        <input type='button' onclick="getSessionState()" class='btn-small' id='save'/>
+      
       </div>
       <div id="package" class="tab-pane fade" style="height:50%">
         <div class="panel-body"
@@ -69,6 +76,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"rs></script>
 <script src="https://ace.c9.io/build/src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
+    
     var editor = ace.edit("editor");
     var package = ace.edit("packageEditor");
     var readme = ace.edit("readMeDoc");
@@ -89,11 +97,19 @@
     readme.setTheme("ace/theme/twilight");
     readme.getSession().setMode("ace/mode/html");
     readme.getSession().setUseWrapMode(true);
+
     function formSubmit(){
        // console.log(code); 
        $.post('/save/${data.compName}', {data: code}, function( res ) {
          //console.log(res);
        });
+
+
+    function getSessionState(){      
+      $.post('/saveData/${data.compName}', {data: readme.getValue(),}, function( res ) {
+        console.log(res);
+      });
+
     }
 </script>
 
