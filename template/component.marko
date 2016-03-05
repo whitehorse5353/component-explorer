@@ -32,9 +32,10 @@
     <div class="tab-content" style="height:50%">
       <div id="readme" class="tab-pane fade in active" style="height:50%">
         <div class="panel-body"
-             id="readMe"
+             id="readMeDoc"
              style="height:100%">
              ${data.readMe}
+      </div>
       </div>
       <div id="package" class="tab-pane fade" style="height:50%">
         <div class="panel-body"
@@ -53,7 +54,7 @@
                 virtual test runner
               </div>
       </div>
-    </div>
+    
     </div>
 </div>
 
@@ -63,7 +64,7 @@
 <script>
     var editor = ace.edit("editor");
     var package = ace.edit("packageEditor");
-    var readme = ace.edit("readMe");
+    var readme = ace.edit("readMeDoc");
     package.setTheme("ace/theme/twilight");
     package.getSession().setMode("ace/mode/javascript");
     package.setValue(JSON.stringify(${data.pack}, null, '\t'));
@@ -74,7 +75,7 @@
     editor.getSession().setUseWrapMode(true);
     readme.setTheme("ace/theme/twilight");
     readme.getSession().setMode("ace/mode/html");
-    
+    readme.getSession().setUseWrapMode(true);
 </script>
 
 </body>
