@@ -42,21 +42,23 @@ app.get('/_components/:slug', function (req, res) {
     }, res);
 });
 
-app.post('/save/:slug', function (req, res) {
-var dataSlug = req.params.slug;
-  res.send('PUT request to homepage');
-  //console.log("iam hitted");
-  fs.writeFile('./components/'+dataSlug+'/data/data.json', req.body.data, (err) => {
-      if (err) throw err;
-      console.log('It\'s saved!');
-    });
-  res.send('Saved Successfully');
-});
-
 app.post('/saveData/:slug',function(req,res){
     var compName = req.params.slug;    
-    console.log(req.body);
-    res.send('saved sucessfully');
+    console.log(req.body.fileName);
+    var fileName = req.body.fileName;
+    if(fileName =='readme'){
+        fileName='./components/'+compName+'/README.md';        
+    }
+    else if(fileName == 'editor'){
+        fileName = './components/'+compName+'/data/data.json';        
+    }
+    fs.writeFile(fileName, req.body.data, function(err) {
+        if(err) {
+            return console.log(err);
+        }
+        res.send('Saved Successfully');
+    }); 
+
 })
 
 

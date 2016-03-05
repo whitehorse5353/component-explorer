@@ -39,10 +39,9 @@
                name='readMeDoc'>
                ${data.readMe}
         </div>
-        <label for="email">Email: </label>
-        <input type="text" id="email" name="email"></input>
-        <input type='button' onclick="getSessionState()" class='btn-small' id='save'/>
-      
+         <div class="panel-heading" style="height:52px;">
+          <input class="btn btn-default pull-right" value="Save" onClick="getSessionState('readme')"/>
+        </div>
       </div>
       <div id="package" class="tab-pane fade" style="height:50%">
         <div class="panel-body"
@@ -52,13 +51,12 @@
       </div>
       
       <div id="mockdata" class="tab-pane fade" style="height:50%">
-      
-       <div class="panel-heading" style="height:52px;">
-          <input class="btn btn-default pull-right" value="Save" onClick="formSubmit()"/>
-        </div>
         <div class="panel-body"
              id="editor"
              style="height:400px">
+        </div>
+        <div class="panel-heading" style="height:52px;">
+          <input class="btn btn-default pull-right" value="Save" onClick="getSessionState('editor')"/>
         </div>
        
       </div>
@@ -87,27 +85,14 @@
     package.setReadOnly(true);
     editor.setTheme("ace/theme/twilight");
     editor.getSession().setMode("ace/mode/javascript");
-    editor.setValue(JSON.stringify(${data.mock}, null, '\t'));
-    editor.getSession().on('change', function(){
-      //textarea.val(editor.getSession().getValue());
-        code = editor.getValue();
-
-    });
+    editor.setValue(JSON.stringify(${data.mock}, null, '\t'));    
     editor.getSession().setUseWrapMode(true);
     readme.setTheme("ace/theme/twilight");
     readme.getSession().setMode("ace/mode/html");
     readme.getSession().setUseWrapMode(true);
 
-    function formSubmit(){
-       // console.log(code); 
-       $.post('/save/${data.compName}', {data: code}, function( res ) {
-         //console.log(res);
-       });
-
-     }
-    function getSessionState(){      
-      $.post('/saveData/${data.compName}', {data: readme.getValue(),}, function( res ) {
-        console.log(res);
+    function getSessionState(action){        
+      $.post('/saveData/${data.compName}', {data: (action === 'editor' ? editor.getValue() : readme.getValue()), fileName:action}, function( res ) {        
       });
 
     }
