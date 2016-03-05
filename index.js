@@ -3,9 +3,12 @@ var app = express();
 var fs = require('fs');
 var path = require('path');
 var marko = require('marko');
+var bodyParser=require("body-parser");
 require("babel-core").transform("code", {});
 
 app.use(express.static('components'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 
 app.get('/_content/:slug', function (req, res) {
     var dataSlug = req.params.slug;
@@ -38,6 +41,12 @@ app.get('/_components/:slug', function (req, res) {
         isServer: (req.query.server != '' ? req.query.server : true)
     }, res);
 });
+
+app.post('/saveData/:slug',function(req,res){
+    var compName = req.params.slug;    
+    console.log(req.body);
+    res.send('saved sucessfully');
+})
 
 var port = process.env.port || 3000;
 var server = app.listen(port, function () {
