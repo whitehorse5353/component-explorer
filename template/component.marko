@@ -43,12 +43,19 @@
              style="height:100%">
         </div>
       </div>
+      
       <div id="mockdata" class="tab-pane fade" style="height:50%">
+      
+       <div class="panel-heading" style="height:52px;">
+          <input class="btn btn-default pull-right" value="Save" onClick="formSubmit()"/>
+        </div>
         <div class="panel-body"
              id="editor"
-             style="height:100%">
+             style="height:400px">
         </div>
+       
       </div>
+      
       <div id="testsuite" class="tab-pane fade" style="height:50%">
               <div class="panel-body">
                 virtual test runner
@@ -65,6 +72,7 @@
     var editor = ace.edit("editor");
     var package = ace.edit("packageEditor");
     var readme = ace.edit("readMeDoc");
+    var code;
     package.setTheme("ace/theme/twilight");
     package.getSession().setMode("ace/mode/javascript");
     package.setValue(JSON.stringify(${data.pack}, null, '\t'));
@@ -72,10 +80,21 @@
     editor.setTheme("ace/theme/twilight");
     editor.getSession().setMode("ace/mode/javascript");
     editor.setValue(JSON.stringify(${data.mock}, null, '\t'));
+    editor.getSession().on('change', function(){
+      //textarea.val(editor.getSession().getValue());
+        code = editor.getValue();
+
+    });
     editor.getSession().setUseWrapMode(true);
     readme.setTheme("ace/theme/twilight");
     readme.getSession().setMode("ace/mode/html");
     readme.getSession().setUseWrapMode(true);
+    function formSubmit(){
+       // console.log(code); 
+       $.post('/save/${data.compName}', {data: code}, function( res ) {
+         //console.log(res);
+       });
+    }
 </script>
 
 </body>
