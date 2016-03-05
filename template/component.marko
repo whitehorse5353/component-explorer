@@ -6,7 +6,7 @@
         <title>Events Page</title>
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
         <link rel="stylesheet" type="text/css" href="../${data.compName}/style/style.scss">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">        
     </head>
 <body>
   <require module="superagent" var="superagent"></require>
@@ -22,7 +22,7 @@
 
     <div class="row col-md-12" style="height:900px">
 
-
+    <div id="alert-area"></div>
     <ul class="nav nav-tabs">
       <li class="active"><a data-toggle="tab" href="#readme">README.md</a></li>
       <li><a data-toggle="tab" href="#package">Package.json</a></li>
@@ -92,9 +92,19 @@
     readme.getSession().setUseWrapMode(true);
 
     function getSessionState(action){        
-      $.post('/saveData/${data.compName}', {data: (action === 'editor' ? editor.getValue() : readme.getValue()), fileName:action}, function( res ) {        
-      });
+      $.post('/saveData/${data.compName}', {data: (action === 'editor' ? editor.getValue() : readme.getValue()), fileName:action}, function( res ) {    
+          if(res.status == 200){
+            newAlert('success',res.message);
+          }
+          else if(res.status == 500){
+            newAlert('danger',res.message);
+          }
+        });
 
+    }
+    function newAlert (type, message) {
+      $("#alert-area").append($("<div class='alert-message alert alert-" + type + " fade in' data-alert><p> " + message + " </p></div>"));
+      $(".alert-message").delay(2000).fadeOut("slow", function () { $(this).remove(); });
     }
 </script>
 

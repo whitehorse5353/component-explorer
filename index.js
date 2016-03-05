@@ -54,9 +54,9 @@ app.post('/saveData/:slug',function(req,res){
     }
     fs.writeFile(fileName, req.body.data, function(err) {
         if(err) {
-            return console.log(err);
+            res.send({message:'Error while saving Data',status:500});
         }
-        res.send('Saved Successfully');
+        res.send({message:'Saved Successfully',status:200});
     }); 
 
 })
