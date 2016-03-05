@@ -29,9 +29,12 @@
       <li><a data-toggle="tab" href="#testsuite">Tests</a></li>
     </ul>
 
-    <div class="tab-content" style="height:100%">
-      <div id="readme" class="tab-pane fade in active">
-        <p>Some content.</p>
+    <div class="tab-content" style="height:50%">
+      <div id="readme" class="tab-pane fade in active" style="height:50%">
+        <div class="panel-body"
+             id="readMe"
+             style="height:100%">
+             ${data.readMe}
       </div>
       <div id="package" class="tab-pane fade" style="height:50%">
         <div class="panel-body"
@@ -60,14 +63,18 @@
 <script>
     var editor = ace.edit("editor");
     var package = ace.edit("packageEditor");
+    var readme = ace.edit("readMe");
     package.setTheme("ace/theme/twilight");
-    editor.setTheme("ace/theme/twilight");
-    editor.getSession().setMode("ace/mode/javascript");
     package.getSession().setMode("ace/mode/javascript");
-    editor.getSession().setUseWrapMode(true);
-    editor.setValue(JSON.stringify(${data.mock}, null, '\t'));
     package.setValue(JSON.stringify(${data.pack}, null, '\t'));
     package.setReadOnly(true);
+    editor.setTheme("ace/theme/twilight");
+    editor.getSession().setMode("ace/mode/javascript");
+    editor.setValue(JSON.stringify(${data.mock}, null, '\t'));
+    editor.getSession().setUseWrapMode(true);
+    readme.setTheme("ace/theme/twilight");
+    readme.getSession().setMode("ace/mode/html");
+    
 </script>
 
 </body>

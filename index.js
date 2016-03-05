@@ -25,6 +25,7 @@ app.get('/_components/:slug', function (req, res) {
     var compName = req.params.slug;
     var getMockData = require('./components/'+compName+'/data/data.json');
     var getPackageJson = require('./components/'+compName+'/package.json');
+    var readMe = fs.readFileSync('./components/'+compName+'/README.md');    
     var tpl = marko.load(require.resolve('./template/component.marko'));
     tpl.render({
         $global: {
@@ -33,6 +34,7 @@ app.get('/_components/:slug', function (req, res) {
         compName: compName,
         mock: JSON.stringify(getMockData),
         pack:JSON.stringify(getPackageJson),
+        readMe: readMe,
         isServer: (req.query.server != '' ? req.query.server : true)
     }, res);
 });
