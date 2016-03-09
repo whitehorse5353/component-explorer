@@ -9,13 +9,28 @@
     </head>
 <body>
 <div id='content' class="container">
-    <h3>Welcome to IEA component explorer</h3>
-    <div class="col-md-6">
+    <h3 style="padding-left:15px;">Welcome to IEA component explorer</h3>
+    <div class="col-md-12">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Local Components</div>
         <ul class="list-group">
             <li class="list-group-item" for="dir in data.dirs">
-                ${dir}  <span class="badge"><a href="_components/${dir}?server=true" style="text-decoration:none;color:#FFF;">server</a></span>  <span class="badge"><a href="_components/${dir}" style="text-decoration:none;color:#FFF;">client</a></span>
+                ${dir}  <span class="badge"><a href="_components/${dir}?engine=hbs&server=true" style="text-decoration:none;color:#FFF;">server</a></span>  <span class="badge"><a href="_components/${dir}?engine=hbs" style="text-decoration:none;color:#FFF;">client</a></span>
             </li>
         </ul>
+    </div>
+
+    <div class="panel panel-default">
+          <div class="panel-heading">Global Components</div>
+
+            <ul class="list-group">
+                <li class="list-group-item" for="local in data.locals" if="local.indexOf('-comp-handlebars-') > 0">
+                        ${local} <span class="badge"><a href="_components/${local}?engine=hbs&root=npm&server=true" style="text-decoration:none;color:#FFF;">server</a></span>  <span class="badge"><a href="_components/${local}?engine=hbs&root=npm" style="text-decoration:none;color:#FFF;">client</a></span>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </div>
 </body>
